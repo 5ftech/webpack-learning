@@ -1,0 +1,268 @@
+.background_white{
+    background-color: white !important;
+}
+
+select {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+}
+
+.form_common_input_checked_bbrsm_address {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.address {
+    /*width: 100%;*/
+    color: #595758;
+    margin-top: 3%;
+}
+
+.address .now {
+    color: #0299d8;
+    font-size: 1em;
+    line-height: 1em;
+    margin-right: 0.5em;
+}
+
+/*中文输入框那里*/
+.address .input {
+    font-size: 1em;
+    margin: 4% 0 6%;
+    line-height: 1.6rem;
+}
+
+.address .input input {
+    margin-left: 1%;
+    border: none;
+    outline: none;
+    width: 18%;
+    background: inherit;
+    border-bottom: 1px solid #666666;
+    border-radius: 0;
+}
+
+.address .input input:last-child {
+    width: 100%;
+    margin-left: 0;
+}
+
+/*识别号*/
+.numberA {
+    width: 100%;
+    color: #595758;
+}
+
+/*标题*/
+.numberA .now {
+
+    color: #0299d8;
+    font-size: 1em;
+    line-height: 1em;
+    margin-right: 0.5em;
+}
+
+.numberA .numberB {
+    font-size: 1em;
+    color: #595757;
+    margin-top: 2%;
+}
+
+/*税收的input框*/
+.numberA .numberB input {
+    margin-left: 1%;
+    border: none;
+    outline: none;
+    width: 60%;
+    background: inherit;
+    border-bottom: 1px solid #bdc1ca;
+    border-radius: 0;
+}
+
+.numberA .numberB img {
+    width: 6%;
+    padding-top: 2%;
+}
+
+.numberA .numberB span {
+    margin-left: 3%;
+    color: #dd504c;
+}
+
+/*留言框*/
+.liuyuan {
+    width: 98%;
+    height: 6rem;
+    outline: none;
+    border: 1px solid #bdc1ca;
+    line-height: 1.2rem;
+}
+
+/*声明*/
+.statement {
+    margin: 3% 0 3%;
+    overflow: hidden;
+    font-size: 1em;
+    color: #595758;
+    text-align: justify;
+}
+
+.Check {
+    font-size: 1em;
+    color: #595758;
+}
+
+/*.Check input[type="radio"] {*/
+/*display: none;*/
+/*}*/
+
+/*.Check input[type="radio"] + span {*/
+/*display: inline-block;*/
+/*width: 19px;*/
+/*height: 19px;*/
+/*margin: -1px 4px 0 0;*/
+/*vertical-align: middle;*/
+/*background: url("./checked_false.png") no-repeat;*/
+/*cursor: pointer;*/
+/*background-size: 80%;*/
+/*}*/
+
+/*.Check input[type="radio"]:checked + span {*/
+/*background: url("./checked_true.png") no-repeat;*/
+/*background-size: 80%;*/
+/*}*/
+
+.detailAddress {
+    margin: 0.5em 0;
+}
+
+.liveAddress input, .detailAddress input {
+    width: 96%;
+    height: 40px;
+    line-height: 40px;
+    outline: none;
+    font-size: 12px;
+    border: 1px solid #bdc1ca;
+    border-radius: 5px !important;
+}
+
+textarea {
+    border: 1px solid #bdc1ca;
+}
+
+.address select {
+    font-size: 1em;
+    line-height: 1em;
+    color: #595758;
+}
+
+.address input, .taxInput input, .taxInput textarea {
+    text-indent: 3%;
+    color: #595758;
+}
+
+.pcdSlot select {
+    width: 25%;
+}
+
+.addButton {
+    /*width: 70%;*/
+
+    margin: 25px auto 0 auto;
+    height: 2em;
+    line-height: 2em;
+    font-size: 1.1em;
+    text-align: center;
+    background: #2583cd;
+    color: #FFFFFF;
+    border-radius: 3px;
+}
+
+.taxInput {
+    /*border: 1px solid #abafb8;*/
+    /*padding: 0.5em;*/
+    margin: 2em 0;
+}
+
+.taxInput select {
+    font-size: 1em;
+    height: 1.65em;
+    line-height: 1em;
+    width: 25%;
+    color: #595758;
+    margin: 0;
+}
+
+.pull-left {
+    float: left;
+}
+
+select {
+    /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+    border: 1px solid #bebec0;
+    padding-left: 5%;
+    margin: 0 1px 0 0px !important;
+
+    /*很关键：将默认的select选择框样式清除*/
+    /*appearance: none;*/
+    /*-moz-appearance: none;*/
+    /*-webkit-appearance: none;*/
+
+    /*在选择框的最右侧中间显示小箭头图片*/
+    /*background: none;*/
+
+    /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+    padding-left: 1em;
+    /*background: url("./arrow.png") no-repeat scroll 98% transparent;*/
+}
+
+.now, select {
+    margin: 0.3em auto;
+}
+
+.countrySelect {
+    width: 50% !important;
+}
+
+@media screen and (min-width: 768px) {
+
+    .addButton {
+        width: 40%;
+    }
+
+    .detailAddress input {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .addButton {
+        width: 90%;
+    }
+
+    .form_common_input_checked_bbrsm_address {
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .form_common_input_checked_bbrsm_address select {
+        font-size: 10px;
+    }
+
+    .detailAddress input {
+        font-size: 10px;
+    }
+}
+
+.inputItem {
+    margin-top: 10px;
+}
+
+.regAddressLabel {
+    width: 110px;
+}

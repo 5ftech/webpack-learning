@@ -1,0 +1,24 @@
+.form_common_input_phone1{
+    width: 100%;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 16px;
+    padding: 0.4rem 0 0.4rem 0.6rem;
+    text-align: left;
+    color: #595758;
+    /*border: 1px solid #c2ccd1;*/
+}
+
+
+.form_common_input_phone2{
+    width: 100%;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 16px;
+    padding: 0.4rem 0 0.4rem 0.4rem;
+    text-align: left;
+    color: #595758;
+    /*border: 1px solid #c2ccd1;*/
+}

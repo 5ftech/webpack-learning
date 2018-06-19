@@ -1,0 +1,14 @@
+<div class="successloading" :if="@show" :attr="{id:@tid}">
+    <table class="successloading_table">
+        <tbody>
+        <tr>
+            <td>
+                <div class="successloading_contain_div">
+                    <img class="loading_img" :attr="{src:@loadingGif}">
+                    <div class="white">页面处理中（{{@setTime}}秒）</div>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,124 @@
+
+.header-nav {
+    /*text-decoration: underline;*/
+    cursor: pointer;
+    display: inline-block;
+    margin: 3px 3px;
+
+}
+
+.navigation_bg {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: #ffffff;
+}
+
+.navigation_red {
+    color: #2179ce;
+}
+
+.navigation {
+    border-bottom: 2px solid #3aaaf8;
+}
+
+.fl {
+    float: left;
+}
+
+.clb {
+    clear: both;
+}
+
+.nav {
+    overflow: hidden;
+    clear: both;
+    padding: 10px;
+    width: 100%;
+}
+
+.nav > li {
+    text-align: right;
+    font-size: 14px;
+    border-bottom: 1px solid #ffffff;
+    padding: 5px 0;
+}
+
+.navbar-nav {
+    margin: 5px 0px;
+}
+
+.nav_main {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.nav_mobile_number {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.logo_img {
+    width: 352px;
+}
+
+.m_order, .catalogue, .logout_img, .nav_phone {
+    padding: 5px;
+    float: left;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.m_order {
+    width: 88px;
+    text-align: center;
+    background: none;
+    cursor: pointer;
+}
+
+.m_order_under {
+    text-decoration: underline;
+}
+
+.catalogue {
+    text-align: center;
+    width: 88px;
+    background: none;
+    cursor: pointer;
+}
+
+.vline {
+    height: 12px;
+    width: 1px;
+    background-color: #888888;
+    float: left;
+    margin-top: 5%;
+}
+
+.logout_img {
+    text-align: center;
+    width: 88px;
+    background: none;
+    cursor: pointer;
+}
+
+.logout_imgmobile {
+    text-align: right;
+    width: 100%;
+    background: none;
+    cursor: pointer;
+}
+
+.nav_mobile_number {
+    width: 256px;
+    text-align: center;
+    background: none;
+    cursor: pointer;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #666666;
+}

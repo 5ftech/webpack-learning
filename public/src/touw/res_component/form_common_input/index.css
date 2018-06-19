@@ -1,0 +1,10 @@
+.form_common_input{
+    width: 100%;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 1.3em;
+    padding: 0.4rem 0 0.4rem 0.4rem;
+    text-align: left;
+    color: #595758;
+}

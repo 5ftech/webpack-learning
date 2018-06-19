@@ -1,0 +1,23 @@
+
+.checkbox_contain1{
+    margin-bottom: 3rem;
+    width:80%;
+    padding: 0 10%;
+}
+.checkbox_contain1 span{
+    display:block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+    background-size: 80%;
+}
+.checkbox_contain1 .checked_box{
+    background: url("./kuang.png") no-repeat;
+    background-size: 80%;
+}
+.checkbox_contain1 .checked_box01{
+    background: url("./kuang2.png") no-repeat;
+    background-size: 80%;
+}

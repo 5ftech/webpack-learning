@@ -1,0 +1,36 @@
+.successloading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+}
+
+.successloading_table {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.successloading_contain_div {
+    /*padding: 40px 30px 50px 30px;*/
+    /*height: 80px;*/
+    width: 320px;
+    /*height: 150px;*/
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: relative;
+    font-size: 14px;
+    /*background: #FFFFFF;*/
+}
+
+.loading_img {
+    width: 30px;
+    height: 30px;
+}
+.white{
+    color: #FFFFFF;
+    font-size: 1.2em;
+}

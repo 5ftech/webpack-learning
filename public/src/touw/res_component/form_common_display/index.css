@@ -1,0 +1,11 @@
+.m_form_common{
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+     overflow: hidden; /*自动隐藏文字*/
+    /*text-overflow: ellipsis;!*文字隐藏后添加省略号*!*/
+    white-space: nowrap;/*强制不换行*/
+     text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+}

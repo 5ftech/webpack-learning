@@ -1,0 +1,6 @@
+<div class="form_slot" onclick="">
+    <label class="form_slot_label form_label_color">{{label}}</label>
+    <div :class="['form_slot_contain', (@isShowBorder? 'form_slot_contain_border':''),(@isSelect ? 'form_solt_select':'')]">
+        <slot name="input"></slot>
+    </div>
+</div>

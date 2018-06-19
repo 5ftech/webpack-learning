@@ -1,0 +1,12 @@
+<div class="modal_tips_contain" :if="isShowModal" :attr="{style:'width:' + @modalWidth + 'px;' + 'height:' + @modalHeight + 'px;'}">
+    <div class="modal_tips">
+        <div class="modal_tips_header">{{title}}</div>
+        <div class="modal_tips_content">
+            您选择的机构和首次登录不一致，请重新确认，如有疑问请拨打<a style="text-decoration: none" href="tel:400-888-8288">400-888-8288</a>转3
+        </div>
+        <div class="modal_tips_btn_group">
+            <div onclick="" :visible="@cancel!=''" :click="@modal_cancel" class="modal_tips_cancel">{{cancel}}</div>
+            <div onclick="" :click="@modal_confirm" :class="[@cancel!=''? 'modal_tips_confirm':'modal_tips_alone']">{{confirm}}</div>
+        </div>
+    </div>
+</div>

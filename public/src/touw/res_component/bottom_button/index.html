@@ -1,0 +1,9 @@
+<div>
+    <div :visible="!isAgree" class="botton_contain_disAgree">
+        {{title}}
+    </div>
+    <div :visible="isAgree" class="botton_contain" id="next" onclick="" :click="@submit">
+        <div class="header_back" :visible="@isShowBack"></div>
+        {{title}}
+    </div>
+</div>

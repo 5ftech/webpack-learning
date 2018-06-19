@@ -1,0 +1,21 @@
+<div class="modal defautModal"  :if="@isShowModal == true"  role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" style="border: 1px solid #30aaff">
+                <div class="modal-header">
+                    <div class="modal-title" id="myModalLabel">{{title}}
+                        <div class="closeimg" onclick="" :click="@modal_cancel">
+                            <img src="./close.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            <div class="modal-body">
+                {{content}}
+            </div>
+            <div class="modal-footer" style="border: none">
+                <button type="button" class=" btn-default1" data-dismiss="modal" :if="@cancel || @cancel != ''" onclick="" :click="@modal_cancel">{{@cancel}}</button>
+                <button type="button" class=" btn-primary1" onclick="" :click="@modal_confirm">{{confirm}}</button>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+{
+  "name": "ipmi",
+  "version": "1.0.0",
+  "description": "投保系统",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config ./build/webpack.config.js --host 0.0.0.0 --port 8060",
+    "local": "webpack --config ./build/local.js",
+    "sit": "webpack --config ./build/sit.js ",
+    "uat": "webpack --config ./build/uat.js ",
+    "prd": "webpack --config ./build/prd.js ",
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.5ftech.com"
+  },
+  "keywords": [
+    "webpack",
+    "前端工程化",
+    "web",
+    "JavaScript"
+  ],
+  "author": "wufan-brave",
+  "license": "",
+  "homepage": "https://www.5ftech.com",
+  "devDependencies": {
+    "css-loader": "^0.23.0",
+    "extract-text-webpack-plugin": "^0.9.1",
+    "file-loader": "^0.8.5",
+    "html-loader": "^0.4.0",
+    "html-webpack-plugin": "^1.7.0",
+    "jquery": "^1.11.3",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.16.3"
+  },
+  "dependencies": {
+    "avalon2": "^2.2.9",
+    "eruda": "^1.4.4",
+    "swiper": "^4.2.6"
+  }
+}

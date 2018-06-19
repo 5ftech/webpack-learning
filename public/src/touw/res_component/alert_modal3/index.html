@@ -1,0 +1,32 @@
+<div class="modal defautModal3" :if="@isShowModal == true" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" style="border: 1px solid #30aaff">
+            <div class="modal-header">
+                <div class="modal-title" id="myModalLabel">{{title}}
+                    <div class="closeimg" onclick="" :click="@modal_cancel">
+                        <img src="./close.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-body" style="margin: 15px !important;text-align: left !important;">
+                <!--<div style="text-align: left !important;margin-bottom: 3px;font-weight: bolder">{{name}}:</div>-->
+                <!--<div>-->
+                    <!--请您按照本账单显示的保险费金额和银行账户信息在{{day_to_pay}}内完成支付。如果您在账单方面有任何疑问，请致电投保人服务专线400-821-7627，我们将有专人为您提供服务。账户信息如下：-->
+                <!--</div>-->
+                <div>保险费：{{insured_amount}}元</div>
+                <div>账户名称：</div>
+                <div>银行账号：</div>
+                <div>开户银行：</div>
+                <div style="margin-top: 15px">
+                    付款人须为您本人(投保人)。建议在银行转账留言内，备注上订单编号或您的证件号码。 请在{{day_to_pay}}前完成，逾期将视为您不再继续本次的投保申请，并封存相关信息。 如您有任何疑问，请致电我司客服热线400-821-7627。
+                </div>
+                <!--<div>保险名称：醇享人生个人高端医疗保险</div>-->
+            </div>
+            <!--<div class="modal-footer">-->
+            <!--<button type="button" class="btn btn-default" data-dismiss="modal" :if="@cancel || @cancel != ''" onclick="" :click="@modal_cancel">{{@cancel}}</button>-->
+            <!--<button type="button" class="btn btn-primary" onclick="" :click="@modal_confirm">{{confirm}}</button>-->
+            <!--</div>-->
+        </div>
+    </div>
+</div>

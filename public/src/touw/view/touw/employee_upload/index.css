@@ -1,0 +1,150 @@
+
+.sendcenter {
+    padding: 0;
+}
+
+.bannerAndInput {
+
+}
+
+.gery_line {
+    width: 100%;
+    background: #f0f0f0;
+    height: 0.5em
+}
+
+.upload_box {
+    background: white;
+    margin-top: 1em;
+    padding: 0;
+}
+
+.reloadButton {
+    border-radius: 2px;
+    background: #41AAF8;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.dj {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.dj span {
+    background: #2179ce;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.upload_input_box {
+    margin-top: 1em;
+    padding-left: 0.1em !important;
+}
+
+.upload_input {
+    height: 40px;
+    line-height: 40px;
+}
+
+.upload_input_box .input_label {
+    margin: 1em 0;
+    font-size: 1.2em;
+}
+
+.aki_uploadbanner {
+    width: 100%;
+}
+
+.uploadTitle {
+    color: #41ABF8;
+    font-size: 2em;
+}
+
+.upload_img {
+    width: 5em;
+    position: absolute;
+    right: 1em;
+    top: 2em;
+}
+
+.upload_tips {
+    width: 75%;
+}
+
+.upcent {
+    text-align: left !important;
+}
+
+.uploadcenter {
+    padding: 1em 1em !important;
+}
+
+.u-size {
+    display: none
+}
+
+.u-speed {
+    display: none
+}
+
+.u-state {
+    display: none
+}
+
+.u-op {
+    display: none
+}
+
+.u-item {
+    position: relative;
+    background-image: url("./aki_uploadpreview.png");
+    background-size: 14%;
+    background-position: 0.5em;
+    background-repeat: no-repeat;
+    height: 5em;
+    box-sizing: border-box;
+    padding-left: 14%;
+    background-color: white !important;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.fl {
+    position: absolute;
+    top: 0;
+    left: 18%;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+}
+
+.fr {
+    width: 80%;
+    position: absolute;
+    top: 29%;
+    left: 18%;
+    box-sizing: border-box;
+}
+
+.u-name {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.u-progress-bar {
+    width: 75% !important;
+}
+
+.u-progress {
+    width: 80%;
+}
+
+.u-detail {
+    position: absolute;
+    top: 0;
+    right: 0;
+}

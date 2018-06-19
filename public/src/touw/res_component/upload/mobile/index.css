@@ -1,0 +1,108 @@
+/*.upload{*/
+    /*margin-top: 15%;*/
+/*}*/
+/*.upload .button p{*/
+    /*width:90%;*/
+    /*font-size: 1.5em;*/
+    /*color: #2e9adc;*/
+    /*margin:0.8rem auto;*/
+/*}*/
+/*.upload img{*/
+    /*width: 15%;*/
+    /*margin:0.4rem 5% 0.4rem 0;*/
+/*}*/
+/*.upload .button{*/
+/*}*/
+/*.upload .button button{*/
+    /*border:none;*/
+    /*width:100%;*/
+    /*margin: 7% auto 2%;*/
+    /*color: #666666;*/
+    /*background: none;*/
+/*}*/
+/*.right{*/
+    /*!*float: right;*!*/
+    /*text-align: center;*/
+/*}*/
+/*.be_careful{*/
+    /*color: #666666;*/
+    /*font-size: 1.2em;*/
+    /*text-align: center;*/
+/*}*/
+/*.be_careful1{*/
+    /*margin-top: 4%;*/
+    /*color: red;*/
+    /*font-size: 1.2em;*/
+    /*text-align: center;*/
+/*}*/
+.sendcenter{
+    width: 100%;
+    overflow: hidden;
+}
+.one{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 4rem;
+}
+.two{
+    text-align: center;
+    font-size: 18px;
+    margin: 1% 0;
+}
+.three{
+    text-align: center;
+    font-size: 14px;
+    margin: 1% 0;
+}
+.button p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.button p span{
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+}
+.uploadcenter{
+    width: 50%;
+    padding: 5rem 0 3rem 0;
+}
+.upcent{
+    text-align: center;
+}
+.upcent span{
+    font-size: 18px;
+    margin-left: 5%;
+}
+.yq{
+    margin-top: 8%;
+}
+#upload-target{
+    border: none;
+    background: inherit;
+}
+.back{
+    margin: 4% 0;
+    text-align: center;
+    font-size: 18px;
+    color: #db403a;
+}
+.dj span{
+    padding: 1rem 8rem;
+}
+@media screen and (max-width: 768px) {
+    .uploadcenter{
+        width: 100%;
+        margin-left: 0;
+    }
+    .back{
+        margin-bottom: 15%;
+    }
+    .button p{
+        font-size: 18px;
+    }
+    .back{
+        font-size: 16px;
+    }
+}

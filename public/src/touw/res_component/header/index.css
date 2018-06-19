@@ -1,0 +1,22 @@
+.header{
+    position: fixed;
+    top:0;
+    z-index: 9;
+}
+.header_contain{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.4em;
+    background: #595758;
+    padding: 0.8rem 0;
+}
+.header_back{
+    position: absolute;
+    top: 0.8rem;
+    width: 15%;
+}
+.header_back img{
+    width:20%;
+}

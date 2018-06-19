@@ -1,0 +1,7 @@
+<div>
+    <input :visible="!item2_is_show" class="form_common_input_phone1" :duplex="@item" :attr="{id:@item_id,maxlength:@maxlength,type:@type,placeholder:@placeholder}"
+           data-toggle="tooltip" data-placement="top" title="电话号码"/>
+    <div :if="item2_is_show" class="form_common_input_phone2" onclick="" :click="switchInput">
+       {{@item2}}
+    </div>
+</div>

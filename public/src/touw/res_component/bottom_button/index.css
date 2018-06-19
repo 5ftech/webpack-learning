@@ -1,0 +1,20 @@
+.botton_contain{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.4em;
+    background: #2583cd;
+    padding: 0.85rem 0;
+}
+.botton_contain_disAgree{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.4em;
+    background: #666;
+    padding: 0.85rem 0;
+}

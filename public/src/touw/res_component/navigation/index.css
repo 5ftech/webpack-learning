@@ -1,0 +1,123 @@
+
+.header-nav {
+    text-decoration: underline;
+    cursor: pointer;
+    display: inline-block;
+    margin: 3px 3px;
+
+}
+.navigation_red {
+    color: #2179ce;
+}
+
+.fl {
+    float: left;
+}
+
+.clb {
+    clear: both;
+}
+
+.nav {
+    overflow: hidden;
+    clear: both;
+    padding: 10px;
+    width: 100%;
+}
+
+.nav > li {
+    text-align: right;
+    font-size: 14px;
+    border-bottom: 1px solid black;
+    padding: 5px 0;
+}
+
+.navbar-nav {
+    margin: 5px 0px;
+}
+
+.nav_main {
+    width: 980px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.nav_mobile_number {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.logo_img {
+    width: 352px;
+}
+.navigation{
+    border-bottom: 2px solid #3aaaf8;
+    width: 100%;
+    overflow: hidden
+}
+.m_order, .catalogue, .logout_img, .nav_phone {
+    padding: 10px;
+    float: left;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.m_order {
+    /*background: url("./myOrder.png") no-repeat left center;*/
+    /*background-size: 22px;*/
+    width: 88px;
+    text-align: center;
+    background: none;
+    cursor: pointer;
+}
+.m_order_under{
+    text-decoration: underline;
+}
+
+.catalogue {
+    /*background: url("./product.png") no-repeat left center;*/
+    /*background-size: 22px;*/
+    text-align: center;
+    width: 88px;
+    background: none;
+    cursor: pointer;
+}
+@media screen and (max-width: 1020px) {
+    .nav_main {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+}
+.vline {
+    height: 12px;
+    width: 1px;
+    background-color: #888888;
+    float: left;
+    margin-top: 5%;
+}
+
+.logout_img {
+    text-align: center;
+    width: 88px;
+    background: none;
+    cursor: pointer;
+}
+.logout_imgmobile{
+    text-align:right;
+    width:100%;
+    background: none;
+    cursor: pointer;
+}
+.nav_mobile_number {
+    /*background: url("./call_icon.png") no-repeat left center;*/
+    /*background-size: 22px;*/
+    width: 256px;
+    text-align: center;
+    background: none;
+    cursor: pointer;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #666666;
+}

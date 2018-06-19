@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>上传资料</title>
+<link href="/igi/touw_uat/css/touw_employee_upload.css?87c720cd4df431485399" rel="stylesheet"></head>
+<body :controller="vm" class="ms-controller">
+<div>
+    <wbr is="ms-loading"/>
+    <wbr is="ms-alert-modal" :widget="{confirm:'确定',cancel:@cancelType}"/>
+
+    <!--banner及录入-->
+    <div class="bannerAndInput">
+        <img :attr="{src:@aki_uploadbanner}" class="aki_uploadbanner" alt="">
+        <div class="col-xs-12 col-md-12 col-sm-12 center-list upload_input_box">
+            <div class="col-xs-12 col-sm-8 center-list-left input_label">证件号码:</div>
+            <div class="col-xs-9 col-sm-9 center-list-right">
+                <input id="id_card" type="text" class="form-control upload_input"
+                       placeholder="请输入被保险人身份证件号码" :duplex="@id_card" maxlength="50">
+            </div>
+            <div :if="@showUpload" class="col-xs-3 col-sm-3 center-list-right reloadButton" onclick="" :click="@reload">
+                继续录入
+            </div>
+            <div :if="!@showUpload" class="col-xs-3 col-sm-3 center-list-right reloadButton" onclick=""
+                 :click="@confirmUpload"
+            >
+                确定
+            </div>
+        </div>
+    </div>
+    <!--上传资料-->
+    <div class="" :visible="@showUpload">
+
+
+        <div class="col-xs-12 col-sm-12 sendcenter upload_box">
+            <div style="max-width: 780px;margin: auto">
+                <!--上传资料-->
+                <div class="upload">
+                    <!--上传按钮-->
+                    <div class="gery_line"></div>
+                    <div class="uploadcenter">
+                        <div class="uploadTitle">身份证件</div>
+                        <div class="upload_tips">
+                            <div>通常在总保费达到20万元时，须上传被保险人的证件正、反面照片</div>
+                            <div>总保费包括已交保费，以及应交而尚未交纳的保费</div>
+                        </div>
+                        <div class="upcent">
+                            <div :attr="{id:'upload_target_ic'}" style="padding: 10px">
+                                <img :attr="{src:@aki_uploadbutton}" class="upload_img">
+                            </div>
+                        </div>
+                        <div id="upload-view-ic" style="float: left;width: 100%"></div>
+                        <div id="log-ic" style="font-size: 10px;color:red;float: left"></div>
+                        <div style="clear: both"></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!--上传资料-->
+        <div class="col-xs-12 col-sm-12 sendcenter">
+            <div style="max-width: 780px;margin: auto">
+                <!--上传资料-->
+                <div class="upload" style=" ">
+                    <!--上传按钮-->
+                    <div class="gery_line"></div>
+                    <div class="uploadcenter">
+                        <div class="uploadTitle">体检报告</div>
+                        <div class="upload_tips">
+                            <div>以下情况须上传被保险人近12个月内的体检报告</div>
+                            <div>1、保额超出最高免体检保额；2、健康告知事项部分答"是"</div>
+                        </div>
+                        <div class="upcent">
+                            <div :attr="{id:'upload_target_medical'}" style="padding: 10px">
+                                <img :attr="{src:@aki_uploadbutton}" class="upload_img">
+
+                            </div>
+                        </div>
+                        <!--<div :attr="{id:'upload_view_medical'}" style="float: left;width: 100%"></div>-->
+                        <!--<div :attr="{id:'log_medical'}" style="font-size: 10px;color:red;text-align: center"></div>-->
+                        <!--<div style="clear: both"></div>-->
+                        <div id="upload-view-medical" style="float: left;width: 100%"></div>
+                        <div id="log-medical" style="font-size: 10px;color:red;float: left"></div>
+                        <div style="clear: both"></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!--上传资料-->
+        <div class="col-xs-12 col-sm-12 sendcenter">
+            <div style="max-width: 780px;margin: auto">
+                <!--上传资料-->
+                <div class="upload">
+                    <!--上传按钮-->
+                    <div class="gery_line"></div>
+                    <div class="uploadcenter" style="margin-bottom: 3em">
+                        <div class="uploadTitle">补充材料</div>
+                        <div class="upload_tips" style="height: 2em">
+                        </div>
+                        <div class="upcent">
+                            <div :attr="{id:'upload_target_other'}" style="padding: 10px">
+                                <img :attr="{src:@aki_uploadbutton}" class="upload_img">
+                            </div>
+                        </div>
+                        <!--<div :attr="{id:'upload_view_other'}" style="float: left;width: 100%"></div>-->
+                        <!--<div :attr="{id:'log_other'}" style="font-size: 10px;color:red;text-align: center"></div>-->
+                        <!--<div style="clear: both"></div>-->
+                        <div id="upload-view-other" style="float: left;width: 100%"></div>
+                        <div id="log-other" style="font-size: 10px;color:red;float: left"></div>
+                        <div style="clear: both"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!--<div  style="padding: 20px 20px;box-sizing: border-box;margin-top: 20px">允许上传的格式为：jpg、jpeg、png、gif、pdf,大小不超过10M</div>-->
+<script src="/igi/touw_uat/js/common.js.js?87c720cd4df431485399"></script><script src="/igi/touw_uat/js/touw_employee_upload.js?87c720cd4df431485399"></script></body>
+</html>

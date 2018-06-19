@@ -1,0 +1,85 @@
+<div class="">
+    <div class="navigation navigation_bg" :if="!@mobile">
+        <div class="nav_main" id="nav_main">
+            <div class="logo_img fl col-md-4 col-xs-12">
+                <img style="width: 202px ; height: 48px" src="./hw2_logo.png" alt="">
+            </div>
+            <div class="" style="float: right;margin-top: 8px" :if="@showHeard">
+                <div :if="@Ygsmstatus==1" style="display: inline-block">
+
+                    <div
+                         :class="['m_order',(@navActive == 'myOrder'? 'header-nav':'')]" onclick=""
+                         :click="@goToindex"
+                         style="cursor: pointer;margin-top: 5px;text-decoration: none">产品列表
+                    </div>
+
+                    <div :visible="!@isLogin" class="vline"></div>
+                    <div :visible="!@isLogin" class="m_order" onclick="" :click="@goToLogin"
+                         style="cursor:pointer;margin-top: 5px;">请登录
+                    </div>
+
+                    <div :visible="@isLogin" class="vline"></div>
+                    <div :visible="@isLogin" class="logout_img" onclick="" :click="@logOut"
+                         style="cursor: pointer;margin-top: 5px;">退出登录
+                    </div>
+
+
+                    <div class="vline"></div>
+                    <div :visible="!@isMyOrder && @status!=1"
+                         :class="['m_order',(@navActive == 'myOrder'? 'header-nav':'')]" onclick=""
+                         :click="@goToMyOrder"
+                         style="cursor: pointer;margin-top: 5px;">我的订单
+                    </div>
+                </div>
+                <div class="clb"></div>
+            </div>
+            <div class="clb"></div>
+        </div>
+    </div>
+    <div :if="@mobile" class="navigation">
+        <nav class="navbar  navbar-fixed-top site-navbar">
+            <div class="container">
+                <div class="navbar-header" style="position: relative;">
+                    <button type="button" class="navbar-toggle collapsed" style="color: #666666" data-toggle="collapse"
+                            data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar" style="background: #ffffff"></span>
+                        <span class="icon-bar" style="background: #ffffff"></span>
+                        <span class="icon-bar" style="background: #ffffff"></span>
+                    </button>
+                    <img style="position: absolute;top:13px;left: 15px;width: 147px" src="./ipmi_img_3.png" alt="">
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav" :if="@Ygsmstatus==1">
+                        <li :visible="!@isMyOrder && @status!=1">
+                            <div :class="[(@navActive == 'myOrder'? 'header-nav':'')]" onclick="" :click="@goToMyOrder">
+                                我的订单
+                            </div>
+                        </li>
+                        <li :visible="!@isMyOrder && @status ==1">
+                            <div :class="[(@navActive == 'myOrder'? 'header-nav':'')]" onclick="" :click="@goToindex">
+                                产品列表
+                            </div>
+                        </li>
+
+                        <li :visible="!@isLogin">
+                            <div class="" onclick="" :click="@goToLogin"
+                                 style="cursor:pointer">请登录
+                            </div>
+                        </li>
+
+                        <li :visible="@isLogin">
+                            <div onclick="" :click="@logOut">退出登录</div>
+                        </li>
+                        <!--<li>-->
+                        <!--<div :class="['logout_imgmobile',(@navActive == 'index' ? 'header-nav':'')]" onclick=""-->
+                        <!--:click="@goToindex" style="cursor: pointer;">产品列表-->
+                        <!--</div>-->
+                        <!--</li>-->
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div onclick="">
+    <!--弹窗-->
+    <div :if="@modalShow" onclick="" :click="@close" class="modal_slot_select"
+         :attr="{style:'width:' + @modalWidth + 'px;' + 'height:' + @modalHeight + 'px;'}">
+        <div class="modal_contain">
+            <div class="modal_s">
+                <div ms-for="(index, item) in @items" onclick="" ms-click="@select(@index)"
+                     class="m_select_item">
+                    {{item|selectFilter(@filterType)}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div :class="['form_common_select',@isHiddenWord?'hideWord':'']" :click="@openModal" onclick="">
+        <span :visible="@isNull()" style="color: #a9a9ae !important;">{{placeholder}}</span>
+        <span :visible="!@isNull()">{{item|selectFilter(@filterType)}}</span>
+    </div>
+    <!--<div style="color: red">-->
+        <!--*请确认您符合参保条件并准确选择机构，否则保单将无法生效-->
+    <!--</div>-->
+</div>
+

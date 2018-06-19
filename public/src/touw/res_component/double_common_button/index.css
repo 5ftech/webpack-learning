@@ -1,0 +1,20 @@
+.double_button{
+    width:80%;
+    margin:10%;}
+.double_button button{
+    outline: none;
+    width:48%;
+    margin:0 1%;
+    padding:0.5rem 0;
+    border:none;
+    color: #fff;
+    border-radius:0.2rem;
+}
+.double_button button:first-child{
+    background: #e2f6ff;
+    color: #666;
+}
+.double_button button:first-child +button{
+    background: #2374cf;
+    color: #fff;
+}

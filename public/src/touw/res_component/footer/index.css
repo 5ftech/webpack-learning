@@ -1,0 +1,14 @@
+.res_footer {
+    width: 100%;
+    background-color: #3aaaf8;
+    color: #dddddd;
+    padding: 25px 5px;
+    text-align: center;
+    font-size: 14px;
+    overflow: hidden;
+    display: none;
+    height: 70px;
+    /*position: fixed;*/
+    /*bottom: 0px;*/
+}
+

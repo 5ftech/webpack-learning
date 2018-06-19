@@ -1,0 +1,34 @@
+<div class="col-xs-12 col-sm-12 sendcenter">
+    <div style="max-width: 780px;margin: auto">
+        <!--上传资料-->
+        <div class="upload">
+            <div class="right">
+                <!--上传按钮-->
+                <div class="button">
+                    <div class="two"></div>
+                    <p :if="@type == 1">请上传被保险人的[体检报告]<br>
+                      </p>
+                    <!--<p :if="@type == 2">请上传被保险人的[投保确认书]</p>-->
+                    <p :if="@type == 3">请上传身份证件正反面照片</p>
+                </div>
+                <div class="three"></div>
+            </div>
+            <div class="uploadcenter">
+                <div class="upcent">
+                    <button id="upload-target"><img :attr="{src:@anniu}"></button>
+                    <span :if="@type == 1">体检报告</span>
+                    <span :if="@type == 3">证件资料</span>
+                    <div class="yq">允许上传的格式为：jpg、jpeg、png、gif、pdf,大小不超过10M</div>
+                </div>
+            </div>
+            <div style="text-align: center" :if="@type == 1">
+                <div :if="typeUpload == 101"><a href="physicalRequirements.html" style="cursor: pointer;text-decoration:underline;color:#2179ce" target="_blank">点击了解体检资料要求</a></div>
+                <div :if="typeUpload == 202" style="color:#2179ce">健康告知问卷有异常情况的，请提供有关病历和检查报告</div>
+            </div>
+            <div id="upload-view" style="float: left;width: 100%"></div>
+            <div id="log" style="font-size: 10px;color:red;float: left"></div>
+            <div style="clear: both"></div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+.checkbox_contain{
+    margin-bottom: 3rem;
+    width:80%;
+    padding: 0 10%;
+}
+.checkbox_contain span{
+    height: 2.0rem;
+    padding-left:1.2rem;
+    color: #333;
+    text-align: center;
+    color: #0b78ce;
+}
+.checked_box{
+    background: url("unallow.png") no-repeat left center;
+    background-size: 7.5%;
+}
+.checked_box01{
+    background: url("allow.png") no-repeat left center;
+    background-size: 7.5%;
+}

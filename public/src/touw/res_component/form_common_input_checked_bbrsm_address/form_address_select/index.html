@@ -1,0 +1,54 @@
+<div>
+
+    <!--省弹窗-->
+    <div :if="@provinceModalShow" class="modal_slot_address"
+         :attr="{id:@randomId + 'pro',style:'width:' + @modalWidth + 'px;' + 'height:' + @modalHeight + 'px;'}">
+        <div class="modal_contain">
+            <div class="modal_s">
+                <div ms-for="(index, item) in @provinces" onclick=""
+                     ms-click="@selectPro(@index)"
+                     class="m_select_item">
+                    {{item.name}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--市弹窗-->
+    <div :if="@cityModalShow" class="modal_slot_address"
+         :attr="{id:@randomId + 'city',style:'width:' + @modalWidth + 'px;' + 'height:' + @modalHeight + 'px;'}">
+        <div class="modal_contain">
+            <div class="modal_s">
+                <div ms-for="(index, item) in @cities" onclick="" ms-click="@selectCity(@index)"
+                     class="m_select_item">
+                    {{item.name}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--区弹窗-->
+    <div :if="@districtModalShow" class="modal_slot_address"
+         :attr="{id:@randomId + 'dist',style:'width:' + @modalWidth + 'px;' + 'height:' + @modalHeight + 'px;'}">
+        <div class="modal_contain">
+            <div class="modal_s">
+                <div ms-for="(index, item) in @districts" onclick="" ms-click="@selectDist(@index)"
+                     class="m_select_item">
+                    {{item.name}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div :if="addressDisplay == ''" onclick="" ms-click="@click" class="m_input_select m_input_select_hint"
+         style="font-size: 1.3em;color: #a9a9a9">请选择
+    </div>
+    <div :if="addressDisplay != ''" onclick="" ms-click="@click" class="m_input_select" style="font-size: 1.3em">
+        {{@addressDisplay}}
+    </div>
+    <div class="address_line"></div>
+    <div class="taxAddressInput">
+    <wbr is="ms-form-common-input"
+         :widget="{item:@detailAddress,item_id:'tb_detail',inputFilter:'AD',inputLength:'40',onItemChanged:@onDetailAddressChanged,placeholder:'请填写详细的地址'}"/>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+.form_slot{
+    width: 96%;
+    padding: 0.6rem 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    overflow: hidden;
+    border-bottom: 1px dashed #ddd;
+    margin:0 auto;
+
+}
+.form_slot_label{
+    float: left;
+    width: 33%;
+    text-align: left;
+    font-size: 1.3em;
+    padding: 0.4rem 0 0.4rem 0rem;
+}
+
+.form_slot_contain{
+    float: left;
+    width: 60%;
+    text-align: left;
+    margin-left: 3%;
+}
+.form_slot_contain_border{
+    border-radius: 0.5rem;
+}
+.form_solt_select{
+    background:url("./select.png") no-repeat right 0.5rem center;
+}

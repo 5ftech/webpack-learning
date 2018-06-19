@@ -1,0 +1,170 @@
+<div class="form_common_input_checked_bbrsm_address">
+    <div style="border-bottom:1px solid #bebec0;width: 100%;margin: auto;margin-top: 30px"></div>
+
+    <div style="padding: 0 0.8rem">
+
+        <!--现居地址-->
+        <!--<div class="address liveAddress taxInput">-->
+        <div class="address liveAddress taxInput">
+
+            <!--现居地址-->
+            <!--<div class="now">现居地址：</div>-->
+            <!---->
+            <!--<div class="input">中文：<input :duplex="@taxInfo.live_country_cn" type="text">(国家)<input-->
+            <!--:duplex="@taxInfo.live_province_cn" type="text">（省）<input :duplex="@taxInfo.live_city_cn"-->
+            <!--type="text">（市）<input-->
+            <!--:duplex="@taxInfo.live_area_cn" type="text">（区）<br><input type="text"></div>-->
+            <!--税收识别号-->
+            <div class="inputItem">
+                <div class="pull-left now regAddressLabel">现居地（国家）:</div>
+                <select style="width: 50%" class="pull-left countrySelect background_white" name="" :duplex="@taxInfo.live_country_cn">
+                    <option value="">选择国家</option>
+                    <option :for="($index,item) in cns" :attr="{value:@item.id}">{{@item.cn}}</option>
+                </select>
+                <div style="clear: both"></div>
+            </div>
+
+            <div class="inputItem">
+                <div>
+                    <div class="pull-left now regAddressLabel" style="">详细地址:</div>
+
+                    <div class="pcdSlot" :visible="@taxInfo.live_country_cn == 'CHN'">
+                        <select class="pull-left background_white" name="" :duplex="@taxInfo.live_province_cn">
+                            <option value="">选择省份</option>
+                            <option :for="($index,item) in candidateLivePros" :attr="{value:@item.id}">{{@item.name}}
+                            </option>
+
+                        </select>
+                        <select class="pull-left background_white" name="" :duplex="@taxInfo.live_city_cn">
+                            <option value="">选择城市</option>
+                            <option :for="($index,item) in candidateLiveCities" :attr="{value:@item.id}">{{@item.name}}
+                            </option>
+
+                        </select>
+                        <select class="pull-left background_white" name="" :duplex="@taxInfo.live_area_cn">
+                            <option value="">选择区</option>
+                            <option :for="($index,item) in candidateLiveArea" :attr="{value:@item.id}">{{@item.name}}
+                            </option>
+
+                        </select>
+                        <div style="clear: both"></div>
+
+                    </div>
+                    <div style="clear: both"></div>
+
+                </div>
+
+                <div class="detailAddress">
+                    <input class="background_white" type="text" :duplex="@taxInfo.live_detail_cn" placeholder="填写详细地址">
+                </div>
+                <div style="clear: both"></div>
+
+            </div>
+
+            <!--<div class="detailAddress" :visible="@taxInfo.live_country_cn == 'CHN'">-->
+            <!--<wbr is="ms-form-address-select-for-taxinfo"/>-->
+            <!--</div>-->
+
+        </div>
+
+        <!--出生地-->
+        <div class="address liveAddress taxInput">
+            <div class="inputItem">
+                <div class="pull-left now regAddressLabel">出生地（国家）:</div>
+                <select class="pull-left countrySelect background_white" name="" :duplex="@taxInfo.birth_country_cn">
+                    <option value="">选择国家</option>
+                    <option :for="($index,item) in cns" :attr="{value:@item.id}">{{@item.cn}}</option>
+                </select>
+                <div style="clear: both"></div>
+
+            </div>
+
+            <div class="inputItem">
+                <div>
+                    <div class="pull-left now regAddressLabel">详细地址:</div>
+                    <div class="pcdSlot" :visible="@taxInfo.birth_country_cn == 'CHN'">
+                        <select class="pull-left background_white" name="" :duplex="@taxInfo.birth_province_cn">
+                            <option value="">选择省份</option>
+                            <option :for="($index,item) in candidateBirthPros" :attr="{value:@item.id}">{{@item.name}}
+                            </option>
+                        </select>
+                        <select class="pull-left background_white" name="" :duplex="@taxInfo.birth_city_cn">
+                            <option value="">选择城市</option>
+                            <option :for="($index,item) in candidateBirthCities" :attr="{value:@item.id}">{{@item.name}}
+                            </option>
+                        </select>
+                        <div style="clear: both"></div>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+
+                <div class="detailAddress" :if="@taxInfo.birth_country_cn != 'CHN'">
+                    <input class="background_white" type="text" :duplex="@taxInfo.birth_detail_cn" placeholder="填写详细地址">
+                </div>
+                <div style="clear: both"></div>
+
+            </div>
+
+            <!--<div class="detailAddress" :visible="@taxInfo.live_country_cn == 'CHN'">-->
+            <!--<wbr is="ms-form-address-select-for-taxinfo"/>-->
+            <!--</div>-->
+        </div>
+
+        <!--税收识别号1-->
+        <div class="taxInput" :for="($index,item) in @jumingguo">
+
+            <div class="numberA inputItem">
+                <!--税收识别号-->
+                <div class="now pull-left regAddressLabel">税收居民国:</div>
+                <select class="pull-left countrySelect background_white" name="" :duplex="@item.taxpayer_nationality">
+                    <option value="">选择国家</option>
+                    <option :for="country in cns" :attr="{value:@country.id}">{{@country.cn}}</option>
+                </select>
+
+                <div style="clear: both"></div>
+            </div>
+
+            <div>
+                <div style="clear: both" class="now " style="margin-top: 10px;color:#0299d8 !important;">纳税人识别号：</div>
+                <div class="detailAddress">
+                    <input class="background_white" type="text" :duplex="@item.taxpayer_no" placeholder="填写纳税人识别号">
+                </div>
+            </div>
+
+            <div :if="!@item.taxpayer_no" class="statement inputItem">如不能提供居民国（地区）纳税人识别号，选择原因：</div>
+
+            <form :if="!@item.taxpayer_no">
+                <label class="Check">
+                    <input style="margin-right: 8px;" value="1" type="radio" name="name" :duplex="@item.non_taxpayer_no"
+                           onclick=""
+                           :click="clickNoPublish($index)">
+                    <span></span>居民国（地区）不发放纳税人识别号
+                </label><br/>
+                <label class="Check">
+                    <input  style="margin-right: 8px;" type="radio" value="2" name="name" :duplex="@item.non_taxpayer_no">
+                    <span></span>账户持有人未能取得纳税人识别号，选此项，解释具体原因：
+                </label>
+                <div style="clear: both"></div>
+            </form>
+
+            <textarea :if="@item.non_taxpayer_no == 2 && !@item.taxpayer_no" class="liuyuan"
+                      :duplex="@item.non_taxpayer_no_reason"></textarea>
+
+            <div class="numberB" :if="@jumingguo.length > 1">
+                <div class="addButton" style="cursor: pointer" onclick="" :click="@clickDelete($index)">删除</div>
+            </div>
+        </div>
+
+        <div style="width:100%;font-size:1em;color: #595758;">
+            本人确认上述信息的真实、准确和完整，且当这些信息发生变更时，将在30日内通知你公司，否则本人承担由此造成的不利后果。
+        </div>
+
+        <!--按钮-->
+        <div class="numberB">
+            <div class="addButton" style="cursor: pointer" onclick="" :click="@clickAdd()">仍是其他国家（地区）税收居民</div>
+        </div>
+
+    </div>
+
+
+</div>
